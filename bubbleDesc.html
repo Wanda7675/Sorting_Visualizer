@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>About Bubble Sort</title>
+</head>
+<body>
+    <div id="bubbleDesc">
+<h3>
+
+    Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are not in the intended order.
+</h3>
+<br><br>
+<p>
+       pseudocode  <br>
+    function swap(arr, xp, yp) <br>
+{<br>
+    &nbsp&nbsp var temp = arr[xp];<br>
+    &nbsp&nbsp arr[xp] = arr[yp];<br>
+    &nbsp &nbsp arr[yp] = temp;<br>
+}<br>
+<br>
+<br>
+function bubbleSort( arr, n)<br>
+{<br>
+    &nbsp &nbsp var i, j;<br>
+    &nbsp&nbspfor (i = 0; i < n-1; i++)<br>
+{<br>
+    &nbsp&nbsp&nbsp&nbspfor (j = 0; j < n-i-1; j++)<br>
+    {<br>
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp if (arr[j] > arr[j+1])<br>
+        {<br>
+            &nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbspswap(arr,j,j+1);<br>
+        <br>
+        }<br>
+    }<br>
+    <br>
+}<br>
+}<br>
+</p><br>
+</div>
+</body>
+</html>

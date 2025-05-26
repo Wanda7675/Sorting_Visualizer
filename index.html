@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    
+        <div class="container">
+            <div><h1>Sorting Visualizer</h1></div>
+            <div><button onclick="createArray()">Create Array</button></div>
+            <div><button onclick="customArray()">Custom Array</button></div>
+
+            <div class="slider">
+                <label for="myRange1">Speed</label>
+                <div> 
+                    
+                    <input type="range"  onchange="setValue()" min="1" max="100" value="40" class="slider1" id="myRange1"></div>
+                <label for="myRange1">Input Size</label>
+                <div><input type="range" onchange="setValue2()" min="1" max="100" value="40" class="slider2" id="myRange2"></div>
+            </div>
+            
+            <div class="buttons">
+                <div><button onclick="showWindow(0)">Bubble Sort</button> </div>
+                <div><button onclick="showWindow(1)">Selection Sort</button> </div>
+                <div><button onclick="showWindow(2)">Insertion Sort</button> </div>
+                <div><button onclick="showWindow(3)">Merge Sort</button> </div>
+                <div><button onclick="showWindow(4)">Quick Sort</button> </div>
+            </div>
+        </div>
+
+        <div class="graph"></div>
+      <script src="index.js"></script>
+      <script src="algos/bubbleSort.js"></script>
+      <script src="algos/selectionSort.js"></script>
+      <script src="algos/insertion.js"></script>
+      <script src="algos/mergeSort.js"></script>
+      <script src="algos/quickSort.js"></script>
+
+      <div class="modalBody">
+        <div class="modalContent">
+          <form>
+            <h2>Enter the custom input</h2>
+            <input type="text" id="customInput" placeholder="3,4,5...">
+            <button onclick="generateArray()" type="button" id="submit">Submit</button>
+
+          </form>
+          <button onclick="cross()" class="close" id="close">+</button>
+        </div>
+      </div>
+      <div><button id="stop" onclick="reset()">Reset</button></div>
+      <div class="sortBody">
+        <div class="sortContent">
+          <form>
+            <h2 id="heading"></h2>
+            <!-- <input type="text" id="customInput" placeholder="3,4,5..."> -->
+            <button onclick="desc()" type="button" id="Description">Description</button>
+            <button onclick="sortSelector()" type="button" id="Run">Run</button>
+            
+
+          </form>
+          <button onclick="cross1()" class="close1" id="close1">+</button>
+        </div>
+      </div>
+
+
+
+  </body>
+</html>     

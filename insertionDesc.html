@@ -1,0 +1,45 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>About Insertion Sort</title>
+</head>
+<body>
+    <div id="bubbleDesc">
+<h3>
+    Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
+</h3>
+<br><br>
+<p>
+       pseudocode  <br>
+       <br>
+       function insertionSort(arr, n) <br>
+{ <br>
+    &nbsp&nbsp let i, key, j; <br>
+    &nbsp   &nbsp for (i = 1; i < n; i++)<br>
+    { <br>
+        &nbsp   &nbsp&nbsp   &nbsp key = arr[i];<br> 
+        &nbsp   &nbsp   &nbsp   &nbsp j = i - 1; <br>
+        <br>
+       
+        &nbsp   &nbsp   &nbsp   &nbsp while (j >= 0 && arr[j] > key)<br>
+        &nbsp   &nbsp   &nbsp   &nbsp { <br>
+            &nbsp   &nbsp   &nbsp   &nbsp   &nbsp   &nbsp arr[j + 1] = arr[j]; <br>
+            &nbsp   &nbsp   &nbsp   &nbsp   &nbsp   &nbsp j = j - 1; <br>
+            &nbsp   &nbsp   &nbsp   &nbsp } <br>
+            &nbsp   &nbsp   &nbsp   &nbsp arr[j + 1] = key; <br>
+            &nbsp   &nbsp } <br>
+} <br>
+         
+</p><br>
+</div>
+</body>
+</html>

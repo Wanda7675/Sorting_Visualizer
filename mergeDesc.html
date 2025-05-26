@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>About Merge Sort</title>
+</head>
+<body>
+    <div id="bubbleDesc">
+<h3>
+    The Merge Sort algorithm is a sorting algorithm that is considered as an example of the divide and conquer strategy. So, in this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner. We can think of it as a recursive algorithm that continuously splits the array in half until it cannot be further divided. This means that if the array becomes empty or has only one element left, the dividing will stop, i.e. it is the base case to stop the recursion. If the array has multiple elements, we split the array into halves and recursively invoke the merge sort on each of the halves. Finally, when both the halves are sorted, the merge operation is applied. Merge operation is the process of taking two smaller sorted arrays and combining them to eventually make a larger one.
+</h3>
+<br><br>
+<p>
+       pseudocode  <br>
+       <br>
+       function merge(arr, l, m, r) <br>
+{ <br>
+    var n1 = m - l + 1; <br>
+    var n2 = r - m; <br>
+ 
+    
+    var L = new Array(n1); <br>
+    var R = new Array(n2); <br>
+ 
+    for (var i = 0; i < n1; i++) <br>
+        L[i] = arr[l + i]; <br>
+    for (var j = 0; j < n2; j++) <br>
+        R[j] = arr[m + 1 + j]; <br>
+        <br>
+ 
+    var i = 0; <br>
+ 
+    var j = 0; <br>
+ 
+    var k = l; <br>
+ 
+    while (i < n1 && j < n2) { <br>
+        if (L[i] <= R[j]) { <br>
+            arr[k] = L[i]; <br>
+            i++; <br>
+        } <br>
+        else { <br>
+            arr[k] = R[j]; <br>
+            j++; <br>
+        } <br>
+        k++; <br>
+    } <br>
+ 
+   
+    while (i < n1) { <br>
+        arr[k] = L[i]; <br>
+        i++; <br>
+        k++; <br>
+    } <br>
+ 
+   
+    while (j < n2) { <br>
+        arr[k] = R[j]; <br>
+        j++; <br>
+        k++; <br>
+    } <br>
+} <br>
+ 
+
+function mergeSort(arr,l, r){ <br>
+    if(l>=r){ <br>
+        return; <br>
+    } <br>
+    var m =l+ parseInt((r-l)/2); <br>
+    mergeSort(arr,l,m); <br>
+    mergeSort(arr,m+1,r); <br>
+    merge(arr,l,m,r);<br>
+}<br>
+ 
+
+      
+         
+</p><br>
+</div>
+</body>
+</html>
