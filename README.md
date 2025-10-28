@@ -7,3 +7,6 @@ Sorting visualizer
 
 
   ![image alt](https://github.com/Wanda7675/Sorting_Visualizer/blob/72033f1791491e261038aa0f709d552a004e64c9/Screenshot%20(2426).png)
+
+
+![image alt](https://github.com/Wanda7675/Sorting_Visualizer/blob/130e2d3523b2e6d325ac1bca981fdd3b526cfb59/Screenshot%20(2423).png)
